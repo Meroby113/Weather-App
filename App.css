@@ -1,0 +1,291 @@
+.App{
+  margin: 0;
+  background-color: #1E1F22;
+  color: rgb(200, 200, 200);
+}
+header{
+  display: flex; 
+  justify-content: space-between; 
+  align-items:center; 
+  margin: 0 3%;
+  height: 4em;
+  padding-top: 1%;
+}
+header h1{
+  display: inline-block;
+  color: #2196F3;
+  font-size: 3rem;
+}
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 0;
+}
+.celsius-to-fahrenheit{
+  width: 60px;
+  height: 34px; 
+  display: inline-block;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.search-container{
+  font-size: 2rem;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar{
+  padding-left: 10px;
+  font-size: 1.5rem;
+  width: 80%;
+  height: 60%;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #2B2D31;
+  color: rgb(200, 200, 200);
+}
+.current-weather{
+  height: 28em;
+  background-color: #2B2D31;
+  border-radius: 2rem;
+  margin: 1%;
+  padding-top: 1%;
+}
+.current-weather h3{
+  padding-left: 20%;
+  text-align: left;
+}
+.current-weather-title{
+  font-size: 0.7rem;
+  display: flex; 
+  justify-content: space-between; 
+  align-items:center; 
+  padding: 0 2%;
+}
+.current-weather-title h1{
+  margin: 0;
+  display: inline-block;
+}
+.current-weather-content{
+  display: flex;
+  justify-content: space-around;
+  height: 28em;
+}
+.current-weather-part1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.current-weather-part1 h1{
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2196F3;
+}
+.current-weather-img-degree {
+  display: flex;
+  justify-content: space-between;
+}
+.current-weather-img-degree h3 {
+  display: flex;
+  font-size: 4rem;
+}
+.current-weather-img-degree img {
+  height: 100%;
+  width: 100%;
+  font-size: 3rem;
+}
+.current-description{
+  padding: 0;
+  margin: 15%;
+  font-size: 2em;
+}
+.current-weather-info{
+  display: flex;
+  align-items: center;
+  padding: 1%;
+}
+.current-weather-info img{
+  height: 10%;
+  width: 10%;
+}
+.extended-forecast{
+  background-color: #313338;
+  border-radius: 2rem;
+  height: 20em;
+  display: flex;
+  justify-content: space-around; 
+  margin: 1%;
+  padding: 1%;
+}
+.extended-forecast-title h1{
+  font-size: 1.5rem;
+  display: flex; 
+  justify-content: space-between; 
+  align-items:center; 
+  padding: 0 2%;
+  margin: 0;
+}
+.footer{
+  height: 1.5em;
+  display: flex;
+  margin: 0 ;
+  padding: 1%;
+  justify-content: center;
+  align-items: center;
+  background-color:  #313338 ;
+}
+.footer p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.current-weather-img{
+  font-size: 3rem;
+  
+}
+@media screen and (max-width: 500px) {
+  .extended-forecast{
+    background-color: #313338;
+    border-radius: 2rem;
+    margin: 1%;
+    padding: 1%;
+    height: 50em;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Weather {
+    /* Add styles for each element */
+    width: calc(30% - 1%); /* 50% width with spacing between elements */
+    
+    box-sizing: border-box; /* Include padding and border in element's width */
+    
+  }
+  .Weather:nth-child(2n) {
+    margin-right: 0; /* Remove margin from the second element in each row */
+  }
+  .extended-forecast-title h1{
+    font-size: 2rem;
+    display: block; 
+    align-items:center; 
+    text-align: center;
+    padding: 0 4%;
+    margin: 0;
+  }
+
+  .current-weather-content{
+    display: block;
+    height: 83rem;
+    
+  }
+  .current-weather-part1{
+    display: flex;
+    
+    flex-direction: column;
+  }
+  .current-weather-img-degree  {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    
+ }
+  .current-weather-img-degree img {
+    font-size: 1rem;
+    
+    }
+  .current-weather-img-degree h3 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+   
+ }
+ .current-description{
+  display: flex;
+  padding: 0;
+  margin-top: 10%;
+  font-size: 2em;
+}
+  .current-weather{
+    height: 85em;
+    display: block;
+    background-color: #2B2D31;
+    border-radius: 2rem;
+    margin: 1%;
+    padding-top: 5%;
+  }
+  .current-weather-part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+ .current-weather-info{
+  display: flex;
+  text-align: center;
+  margin-left: 25%;
+}
+
+.current-weather-title{
+  font-size: 1rem;
+  display: flex; 
+  justify-content: space-between; 
+  align-items:center; 
+  padding: 1% 3%;
+}
+}
