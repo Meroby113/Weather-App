@@ -75,7 +75,7 @@ export default class App extends React.Component  {
     let city = "istanbul";
     let wicon = clear_icon;
     let day = "";
-    if (event.key === 'Enter') {
+    if (event.key === "Enter") {
       event.target.blur();
       if(city[0] === ""){
         return 0;
@@ -184,10 +184,10 @@ export default class App extends React.Component  {
         <div className='current-weather'>
           <div className='current-weather-title'>
             <h1>Current Weather</h1>
-            <label className="switch celsius-to-fahrenheit">
+            {/* <label className="switch celsius-to-fahrenheit">
               <input type="checkbox"></input>
               <span className="slider round"></span>
-            </label>
+            </label> */}
           </div>
           <div className='current-weather-content'>
           <div className='current-weather-part1'>

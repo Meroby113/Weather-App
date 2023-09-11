@@ -264,7 +264,7 @@ input:checked + .slider:before {
   font-size: 2em;
 }
   .current-weather{
-    height: 85em;
+    height: 61em;
     display: block;
     background-color: #2B2D31;
     border-radius: 2rem;
@@ -280,7 +280,7 @@ input:checked + .slider:before {
  .current-weather-info{
   display: flex;
   text-align: center;
-  margin-left: 25%;
+  margin-left: 15%;
 }
 
 .current-weather-title{
