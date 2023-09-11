@@ -243,7 +243,9 @@ input:checked + .slider:before {
     
  }
   .current-weather-img-degree img {
-    font-size: 1rem;
+    
+    height: 25vh;
+    width: 25vh;
     
     }
   .current-weather-img-degree h3 {
