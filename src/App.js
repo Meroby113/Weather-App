@@ -76,6 +76,7 @@ export default class App extends React.Component  {
     let wicon = clear_icon;
     let day = "";
     if (event.key === 'Enter') {
+      event.preventDefault();
       if(city[0] === ""){
         return 0;
       }
