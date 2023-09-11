@@ -157,8 +157,8 @@ input:checked + .slider:before {
   padding: 1%;
 }
 .current-weather-info img{
-  height: 10vh;
-  width: 10vh;
+  height: 5vh;
+  width: 5vh;
 }
 .extended-forecast{
   background-color: #313338;
