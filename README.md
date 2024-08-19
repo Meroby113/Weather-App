@@ -21,4 +21,6 @@ A responsive weather application built using **React.js** to fetch and display w
 - **Fetch API**: To handle HTTP requests for fetching weather data.
 ## Screenshots:
 ![image](https://github.com/user-attachments/assets/907265b1-1cfb-44fa-be60-6cc41857e115)
-![image](https://github.com/user-attachments/assets/a919c2b6-b034-4341-8542-c6e86c82d203)
+![image](https://github.com/user-attachments/assets/a919c2b6-b034-4341-8542-c6e86c82d203)<br/>
+
+Check app from here: https://weather-app-react-js-orcin.vercel.app/
