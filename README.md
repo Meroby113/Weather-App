@@ -24,3 +24,4 @@ A responsive weather application built using **React.js** to fetch and display w
 ![image](https://github.com/user-attachments/assets/a919c2b6-b034-4341-8542-c6e86c82d203)<br/>
 
 Check app from here: https://weather-app-react-js-orcin.vercel.app/
+Not: This project has some shortcomings, please ignore them for now :)
